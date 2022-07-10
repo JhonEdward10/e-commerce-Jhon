@@ -1,0 +1,40 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login_form{
+    box-shadow: 0 0 20px #0005;
+    padding: 20px;
+    border-radius: 20px;
+    width: min-content;
+}
+
+.login_text{
+    width: 100%;
+    padding: 12px 8px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.logged-input{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.flex-login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_title{
+    margin: 10px 0 ;
+}
+
+.login-item{
+    margin-bottom: 10px;
+}

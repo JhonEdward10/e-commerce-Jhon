@@ -1,0 +1,50 @@
+.footer {
+    padding: var(--padding-mobile);
+    background-color: #3C3C3B;
+    color: white;
+  }
+  .footer__text {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem
+  }
+  .redes__items {
+    width: 35px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 720px) {
+    .footer {
+      padding: var(--padding-tablet);
+    }
+    .footer__text{
+      margin-bottom: 30px;
+    }
+  }
+
+.fa-linkedin-in:before {
+    content: "\f0e1";
+    color: white;
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+  color: white;
+}
+
+.fa-youtube:before {
+  color: white;
+  content: "\f167";
+}

@@ -1,0 +1,140 @@
+.slider{
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    padding: 20px 0 40px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 50px;
+}
+.slider_container{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transform: translateX(calc(-100% * 0/ 3));
+    transition: transform 400ms ease;
+}
+.second-img{
+    transform: translateX(calc(-100% * 1/ 3));
+    transition: transform 400ms ease;
+}
+.third-img{
+    transform: translateX(calc(-100% * 2/ 3));
+    transition: transform 400ms ease;
+}
+.slider_imgs{
+    width: calc(100% / 3);
+    height: 100%;
+    object-fit: contain;
+
+}
+.slider_prev,
+.slider_next {
+    position: absolute;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slider_prev{
+    left: 5px;
+}
+.slider_next{
+    right: 5px;
+}
+
+.puntitos-container{
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.puntitos{
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.puntitos_active{
+    background-color: var(--secondary-color);
+}
+
+.product-info_title{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.add-cart-button{
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    padding: 15px;
+    width: 100%;
+}
+
+.fa-cart-arrow-down:before {
+    content: "\f218";
+    color: white;
+}
+
+.product-info_description{
+    margin-bottom: 30px;
+}
+
+.card-product_price-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.product-info_label{
+    color: var(--gray);
+    margin-bottom: 5px;
+    left:10px;
+}
+.product-info_number{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 10px;
+
+}
+.card-product_price-colum{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.card-product_buttom-row{
+    display: flex;
+    flex-direction: row;
+}
+.product-info_minus{
+    margin-top: 10px;
+    background: none;
+    height: 30px;
+    line-height: 1.9;
+    width: 30px
+}
+.product-info_plus{
+    margin-top: 10px;
+    background: none;
+    height: 30px;
+    line-height: 1.9;
+    width: 30px
+}
+.plus-minus-value{
+    line-height: 3.2;
+    padding: 0 32px;
+}
